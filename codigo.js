@@ -17,7 +17,7 @@ caja.push(new billete(1,50));
 
 var entregados = [];
 
-var dinero = 210;
+var dinero;
 var div;
 var papeles;
 
@@ -30,6 +30,8 @@ function entregarDinero()
 {
     var d = document.getElementById("cantidad");
     dinero = parseInt(d.value);
+    
+    
 
     for (var bi of caja)
     {
@@ -45,7 +47,7 @@ function entregarDinero()
                 papeles = div
             }
             entregados.push(new billete(bi.valor, papeles))
-            dinero = dinero - (bi.valor * papeles);
+            dinero = dinero - (bi.valor * papeles); 
         }
     }
     if (dinero > 0)
@@ -60,3 +62,5 @@ function entregarDinero()
         }
     }
 }
+
+
