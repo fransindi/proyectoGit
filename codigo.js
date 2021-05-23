@@ -7,9 +7,13 @@ class billete
     }
 }
 var caja = []
-caja.push(new billete(50,3));
-caja.push(new billete(20,2));
-caja.push(new billete(10,2));
+
+caja.push(new billete(100,50));
+caja.push(new billete(50,50));
+caja.push(new billete(20,50));
+caja.push(new billete(10,50));
+caja.push(new billete(50,50));
+caja.push(new billete(1,50));
 
 var entregados = [];
 
@@ -26,7 +30,7 @@ function entregarDinero()
 {
     var d = document.getElementById("cantidad");
     dinero = parseInt(d.value);
-    
+
     for (var bi of caja)
     {
         if(dinero > 0)

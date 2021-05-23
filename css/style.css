@@ -1,7 +1,9 @@
 body{
-    color: whitesmoke;
-    background-color: limegreen;
-}
-p{
+    background-color: black;
     color: white;
+    text-align: center;
+}
+img
+{
+    margin: auto;
 }
