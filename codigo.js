@@ -12,7 +12,7 @@ caja.push(new billete(100,50));
 caja.push(new billete(50,50));
 caja.push(new billete(20,50));
 caja.push(new billete(10,50));
-caja.push(new billete(50,50));
+caja.push(new billete(5,50));
 caja.push(new billete(1,50));
 
 var entregados = [];
