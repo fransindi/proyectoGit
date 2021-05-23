@@ -18,11 +18,15 @@ var div;
 var papeles;
 
 var r = document.getElementById("respuesta");
-
+var b = document.getElementById("botoncito");
+b.addEventListener("click", entregarDinero)
 
 
 function entregarDinero()
 {
+    var d = document.getElementById("cantidad");
+    dinero = parseInt(d.value);
+    
     for (var bi of caja)
     {
         if(dinero > 0)
